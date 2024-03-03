@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Dekko:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --darktan: #9A8548;
+  --grad2: #373737;
+  --grad1: #1f1f1f; 
+  --grad3: #b0a05d; 
+  --grad5: #675037; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dekko", sans-serif;
+  transition:all .2s linear;
+  transition: width none;
+  text-decoration: none;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+section{
+  padding:5rem 19.5%;
+}
+.header{
+  position: sticky;
+  top:0; left:0; right:0;
+  background-color: white;
+  z-index: 1000;
+  border: 7px solid black;
+}
+
+.header .flex{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0;
+  max-width: 1200px;
+  position: relative;
+}
+
+.header .flex .navbar ul{
+  list-style: none;
+}
+
+.header .flex .navbar ul li{
+  float: left;
+  position: relative;
+  border-inline-start: 7px solid black;
+}
+
+.header .flex .navbar ul li a{
+  font-size: 4rem;
+  padding:1rem 1.5rem;
+  display: block;
+  color:var(--black);
+  text-transform: capitalize;
+}
+
+.header .flex .navbar ul li a:hover{
+  background-color: black;
+  color:var(--white);
+}
+
+.header .flex .navbar ul li ul{
+  position: absolute;
+  left:0;
+  width: 15rem;
+  background-color: white;
+  animation: fadeIn .2s linear;
+  display: none;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
+.bookshelf--frame {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: tan;
+  background: url('https://static.tumblr.com/8x9m588/C8ho55ylx/bg-wood2.png'), linear-gradient(var(--grad1), var(--grad2) 290px, var(--grad3) 290px, var(--grad3) 292px, var(--darktan) 292px, var(--darktan) 298px, var(--grad5) 298px, var(--grad5) 300px);
+  background-size: auto, 10px 300px;
+  border-left: 10px solid var(--darktan);
+  border-right: 10px solid var(--darktan);
+  text-align: center;
+
+  &:first-of-type {
+    border-top: 10px solid var(--darktan);
+  }
+
+  .book-wrapper {
+    display: inline-block;
+    width: 290px;
+    vertical-align: bottom;
+    height: 280px;
+    position: relative;
+    margin: 10px 0;
+    max-width: 100%;
+
+    img {
+      height: auto;
+      width: auto;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+
+
+
+
